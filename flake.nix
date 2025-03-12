@@ -10,10 +10,10 @@
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
     in pkgs.stdenv.mkDerivation {
       name = "battery-alert";
-      src = ./src/.;
+      src = ./.;
 
       buildPhase = ''
-        gcc -o battery_alert src/main.c
+        gcc -o battery_alert battery_alert.c
       '';
 
       installPhase = ''
