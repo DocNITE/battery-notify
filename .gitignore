@@ -1,3 +1,7 @@
+# Another ignores
+battery_alert
+result
+
 # Prerequisites
 *.d
 
