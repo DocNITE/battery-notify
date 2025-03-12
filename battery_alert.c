@@ -26,10 +26,6 @@ void send_alert() {
 
 void check_battery() {
     int battery_level = get_battery_level();
-    if (battery_level < 0) {
-        return;
-    }
-
     if (battery_level <= THRESHOLD) {
         send_alert();
     }
